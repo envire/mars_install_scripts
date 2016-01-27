@@ -640,11 +640,11 @@ function patch_ode_mars {
     # patch was accepted upstream (http://sf.net/p/opende/patches/180) and
     # applied to Rev. 1913 (http://sf.net/p/opende/code/1913) and should be
     # in the next release
-    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.12-va_end.patch
-    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.12-lambda.patch
-    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.12-export_joint_internals.patch
+    #patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.12-va_end.patch
+    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.13.1-lambda.patch
+    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.13.1-export_joint_internals.patch
     # patch was submitted upstream (http://sf.net/p/opende/patches/187)
-    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.12-abort.patch
+    patch -N -p0 -d ${MARS_DEV_ROOT}/external/ode_mars -i ${MARS_SCRIPT_DIR}/patches/ode-0.13.1-abort.patch
     printBold "... done patching external/ode_mars version 0.13.1."
 }
 
